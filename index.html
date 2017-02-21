@@ -254,8 +254,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<span>We Love Each Other</span>
 					<h2>Our Story</h2>
-					<p>
-Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					<p>Life time memorable moments.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -265,11 +264,11 @@ Far far away, behind the word mountains, far from the countries Vokalia and Cons
 							<div class="timeline-badge" style="background-image:url(images/couple-1.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">First We Meet</h3>
-									<span class="date">December 25, 2015</span>
+									<h3 class="timeline-title">Gol-Dhana</h3>
+									<span class="date">August 15, 2016</span>
 								</div>
 								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>When both of us said "YES" and our families blessed us for the relationship.</p>
 								</div>
 							</div>
 						</li>
@@ -278,10 +277,10 @@ Far far away, behind the word mountains, far from the countries Vokalia and Cons
 							<div class="timeline-panel">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">First Date</h3>
-									<span class="date">December 28, 2015</span>
+									<span class="date">September 24, 2016</span>
 								</div>
 								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>First time we went for a ride & dinner in Ahmedabad.</p>
 								</div>
 							</div>
 						</li>
@@ -289,11 +288,11 @@ Far far away, behind the word mountains, far from the countries Vokalia and Cons
 							<div class="timeline-badge" style="background-image:url(images/couple-3.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">In A Relationship</h3>
-									<span class="date">January 1, 2016</span>
+									<h3 class="timeline-title">Pre-Wedding Photoshoot</h3>
+									<span class="date">February 12, 2017</span>
 								</div>
 								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>An amazing day with lots of poses, dresses and fun @ Bhavna Resort, Patdi.</p>
 								</div>
 							</div>
 						</li>
@@ -308,8 +307,8 @@ Far far away, behind the word mountains, far from the countries Vokalia and Cons
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<span>Our Memories</span>
-					<h2>Wedding Gallery</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					<h2>Photo Gallery</h2>
+					<p>Places we enjoyed togather.</p>
 				</div>
 			</div>
 			<div class="row row-bottom-padded-md">
@@ -400,8 +399,8 @@ Far far away, behind the word mountains, far from the countries Vokalia and Cons
 	</div>
 
 	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
-		<div id="event-location" class="overlay"></div>
-		<div class="container">
+		<!--<div class="overlay"></div>-->
+		<div id="event-location class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>Are You Attending?</h2>
@@ -411,14 +410,29 @@ Far far away, behind the word mountains, far from the countries Vokalia and Cons
 			<div class="row animate-box">
 				<div class="col-md-10 col-md-offset-1">
 					<div class="col-sm-6 map">
-      <div class="google-map-canvas" id="map-canvas">
-      </div>
-    </div>
+				      <div class="google-map-canvas" id="map">
+				      </div>
+    					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
+	<script>
+		function initMap() {
+		    var oLocSI = {lat: 23.108417, lng: 72.527750};
+		    var map = new google.maps.Map(document.getElementById('map'), {
+		    zoom: 15,
+		    center: oLocSI
+		    });
+		    var marker = new google.maps.Marker({
+		    position: oLocSI,
+		    map: map,
+		    title: "D-379, High Court Employee So., Vasant Nagar."
+		    });
+		}
+        </script>
+	<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL7wuo9wPas7I6rYprd67v6E3pssaTcsE&amp;callback=initMap">
+        </script>
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
 
@@ -492,7 +506,6 @@ Far far away, behind the word mountains, far from the countries Vokalia and Cons
         enableUtc: false
     });
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL7wuo9wPas7I6rYprd67v6E3pssaTcsE&callback=myMap"></script>
 	</body>
 </html>
 
