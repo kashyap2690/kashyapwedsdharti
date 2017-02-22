@@ -398,36 +398,56 @@
 		</div>
 	</div>
 
-	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
-		<!--<div class="overlay"></div>-->
-		<div id="event-location class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Are You Attending?</h2>
-					<p>Please Fill-up the form to notify you that you're attending. Thanks.</p>
+	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/img_bg_3.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<span>Our Special Events</span>
+					<h2>Wedding Events</h2>
 				</div>
 			</div>
-			<div class="row animate-box">
-				<div class="col-md-10 col-md-offset-1">
-					<div class="col-sm-6 map">
-				      <div class="google-map-canvas" id="map">
-				      </div>
-    					</div>
+			<div class="row">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="col-md-6 col-sm-6">
+									<div class="google-map-canvas" id="map"></div>
+								<p></p>
+							</div>
+							<div class="col-md-6 col-sm-6">
+									<div class="google-map-canvas" id="mapAtali"></div>
+								<p></p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
 	<script>
 		function initMap() {
-		    var oLocSI = {lat: 23.108417, lng: 72.527750};
+		    var oLocHome = {lat: 23.108417, lng: 72.527750};
 		    var map = new google.maps.Map(document.getElementById('map'), {
 		    zoom: 15,
-		    center: oLocSI
+		    center: oLocHome
 		    });
 		    var marker = new google.maps.Marker({
-		    position: oLocSI,
+		    position: oLocHome,
 		    map: map,
 		    title: "D-379, High Court Employee So., Vasant Nagar."
+		    });
+
+		    var oLocAtali = {lat: 21.722638, lng:  72.702711};
+		    var mapAtali = new google.maps.Map(document.getElementById('mapAtali'), {
+		    zoom: 15,
+		    center: oLocAtali
+		    });
+		    marker = new google.maps.Marker({
+		    position: oLocAtali,
+		    map: mapAtali,
+		    title: "Atali, Vagra, Bharuch."
 		    });
 		}
         </script>
