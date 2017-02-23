@@ -1857,4 +1857,10 @@ form label {
     height: 100%;
  	height:calc(100% - 0px);
 }
+ .fb-comments, .fb-comments span, .fb-comments.fb_iframe_widget span iframe {
+    width: 100% !important;
+    left: 0px !important;
+    height: calc(130%) !important;
+    
+}
 /*# sourceMappingURL=style.css.map */
